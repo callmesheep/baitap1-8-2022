@@ -1,0 +1,25 @@
+// bViết chương trình nhập vào một mảng số nguyên intArr gồm 5 phần tử, sao chép toàn bộ các phầntử của mảng này sang mảng số thực floatArr gồm 10 phần tử, 
+các phần tử còn lại của mảngfloatArr được gán bằng 0. Hiển thị toàn bộ các phần tử của 2 mảng trên.
+#include<stdio.h>
+int main(){
+	int a[5], i,j;
+	float b[10];
+	j = 0;
+	printf("nhap vao gia tri a:");
+	for(i=0;i<5;i++){
+		printf("\na%d",i);
+		scanf("%d",&a[i]);
+	}
+	printf("hien thi gia tri b:");
+	for(i=0;i<10;i++){
+		if(i<5){
+			b[i]=a[i];
+			printf("\nb[%d]=%f",i,b[i]);
+		}
+		else{
+			printf("\nb[%d]=%f",i,j);
+		}
+	}
+	return 0;
+	
+}
